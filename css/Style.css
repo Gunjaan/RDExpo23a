@@ -1,0 +1,46 @@
+@font-face {
+    font-family: glitch;
+    src: url(../fonts/Pixel\ LCD-7.ttf);
+}
+.timer{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 30rem;
+    gap: 1rem;
+}
+.timer__heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.timer__main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.timer__block{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: white;
+    background: rgba(217, 217, 217, 0.3);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2.5px);
+    border-radius: 5px;
+    padding: 1.4rem 3.2rem;
+    width: 5rem;
+    border: 1px solid white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: glitch;
+    padding-top: 1.8rem;
+}
+.timer__descriptor{
+    font-size: 0.8rem;
+}
+
+
