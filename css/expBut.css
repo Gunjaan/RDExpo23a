@@ -154,3 +154,8 @@
 .activenav{
   color: #0f69bd;
 }
+.nav-itms{
+  display: flex !important;
+  gap: 2rem !important;
+  width: 57% !important;
+}

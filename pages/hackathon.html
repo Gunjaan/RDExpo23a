@@ -75,9 +75,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Add custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/registration.css">
   </head>
   <body class="glitch">
     <div class="navi">
@@ -87,7 +90,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse nav-menus" id="navbarSupportedContent-4">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto nav-itms">
                 <li class="nav-item active">
                     <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
                 </li>
@@ -99,15 +102,21 @@
                   <div class="dropdown-menu dropdown-menu-right dropdown-cyan dropbg" aria-labelledby="navbarDropdownMenuLink-4">
                         <a class="dropdown-item" href="#">Style Wars</a>
                         <a class="dropdown-item" href="#">Code Mania</a>
-                        <a class="dropdown-item" href="#">Gaming Night</a>
-                        <a class="dropdown-item" href="#">Paintball</a>
+                        <a class="dropdown-item" href="#">Exports</a>
+                        <a class="dropdown-item" href="#">Warzone Extreme</a>
                         <a class="dropdown-item" href="#">Web Bot Jam</a>
-                        <a class="dropdown-item" href="#">Hackathon</a>
+                        <a class="dropdown-item" href="#">HackUN</a>
                         <a class="dropdown-item" href="#">Movie Night</a>
                       </div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sponsors</a>
                     </li>
             </ul>
         </div>
@@ -227,9 +236,21 @@
                   Unleash your inner coder and conquer the tech world with the
                   power of innovation at the hackathon!
                 </div>
-                <div class="evtim">
-                  <span class="evdate">21<sup>st</sup> - 22<sup>nd</sup>April</span>
-                  <span class="evtime">06:00PM - 10:00AM</span>
+                <div class="evat">
+                  <div class="evtim">
+                    <span class="evdate">21<sup>st</sup> - 22<sup>nd</sup>April</span>
+                    <span class="evtime">06:00PM - 12:00PM</span>
+                  </div>
+                  <button class="regbutton">Register Here</button>
+                  <script>
+                    // on click redirect to google.com
+                    document
+                      .querySelector(".regbutton")
+                      .addEventListener("click", function (e) {
+                        e.preventDefault();
+                        window.location.href = "https://forms.gle/nAuLPgcBgEuXvdzF9";
+                      });
+                  </script>
                 </div>
                 <p class="destination__description hun-abt">
                   Are you ready to take on the challenge and showcase your
@@ -258,7 +279,7 @@
                 class="w-row"
               >
                 <div
-                  class="no-padding-col w-col w-col-6 w-col-small-6 w-col-tiny-6"
+                  class="no-padding-col w-col w-col-6 w-col-small-6 w-col-tiny-6 img1"
                 >
                   <img
                     src="../images/hackathon/5a7d01506001ff0001f3c0c4_dinner.jpg"
@@ -268,18 +289,20 @@
                     "
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 36vw"
                     data-w-id="cbb3d1df-135d-38b9-2639-ef0a5a268cab"
+                    class="img1"
                   />
                 </div>
                 <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
                   <img
-                    src="../images/hackathon/hackc.JPG"
+                    src="../images/hackathon/DSC_0022.JPG"
                     srcset="
-                      ../images/hackathon/hackc.JPG 500w,
-                      ../images/hackathon/hackc.JPG 552w
+                      ../images/hackathon/DSC_0022.JPG 500w,
+                      ../images/hackathon/DSC_0022.JPG 552w
                     "
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 45vw, (max-width: 991px) 47vw, 36vw"
                     data-w-id="dd4402b4-90dc-d8b7-2687-580cf9ede4b9"
-                  /><img
+                  />
+                  <img
                     src="../images/hackathon/hacka.JPG"
                     data-w-id="896c3f88-47da-ae3c-121a-013228f5d162"
                     class="margined-image"
@@ -320,21 +343,21 @@
       </div>
       <span class="footline"></span>
       <div class="foot3">
-        <div class="f3left"><img src="../images/ieee_logo_icon_169992.webp" alt="ieee"> IEEE 2022 - 2023</div>
+        <div class="f3left"><img src="../images/ieee_logo_icon_169992.webp" alt="ieee"> IEEE JUIT SB 2022 - 2023</div>
         <div class="f3right">
-          <a href="" class="footsocials"><img src="../fonts/socials/mail.svg" alt=""></a>
-          <a href="" class="footsocials"
+          <a href="mailto:ieee.juit@juitsolan.in" class="footsocials"><img src="../fonts/socials/mail.svg" alt=""></a>
+          <a href="https://www.facebook.com/ieeejuitsb/" class="footsocials"
             ><img src="../fonts/socials/face.svg" alt=""></i
           ></a>
-          <a href="" class="footsocials"
+          <a href="https://www.instagram.com/ieeejuit/?hl=en" class="footsocials"
             ><img src="../fonts/socials/insta.svg" alt=""></i
           ></a>
-          <a href="" class="footsocials"><img src="../fonts/socials/link.svg" alt=""></a>
-          <a href="" class="footsocials"><img src="../fonts/socials/twi.svg" alt=""></a>
+          <a href="https://in.linkedin.com/company/ieeejuit" class="footsocials"><img src="../fonts/socials/link.svg" alt=""></a>
+          <a href="https://twitter.com/juitieee" class="footsocials"><img src="../fonts/socials/twi.svg" alt=""></a>
         </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>

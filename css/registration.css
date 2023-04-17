@@ -1,0 +1,55 @@
+.regbutton{
+    width: 14rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 0.5rem; */
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    margin-top: 1rem;
+    font-family: Anton, sans-serif;
+    border-radius: 0;
+}
+.evat{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.regbutton:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.third-top{
+    background-color: #0c157b;
+}
+.orange-divider-cenetred{
+    background-color: #0c157b;
+}
+@media screen and (max-width: 425px){
+    .destination__description{
+        width: 96%;
+    }
+    .tabs-content{
+        overflow-x: hidden;
+        padding: 1rem;
+    }
+    .evat{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .evtim{
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .nav-logo{
+        width: 7rem;
+    }
+    .margined-image{
+        max-width: 100% !important;
+    }
+}
