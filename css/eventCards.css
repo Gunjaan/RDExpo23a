@@ -75,6 +75,26 @@
 {
   background: linear-gradient(315deg, #03ffd5, #0400ff)
 }
+.container-event .box:nth-child(4):before,
+.container-event .box:nth-child(4):after
+{
+  background: linear-gradient(315deg, #fbee00, #0400ff)
+}
+.container-event .box:nth-child(5):before,
+.container-event .box:nth-child(5):after
+{
+  background: linear-gradient(315deg, #fba300, #e100ff)
+}
+.container-event .box:nth-child(6):before,
+.container-event .box:nth-child(6):after
+{
+  background: linear-gradient(315deg, #8afb00, #00ffd5)
+}
+.container-event .box:nth-child(7):before,
+.container-event .box:nth-child(7):after
+{
+  background: linear-gradient(315deg, #fb0000, #ffb300)
+}
 
 .container-event .box span
 {
@@ -107,8 +127,8 @@
 
 .container-event .box:hover span::before
 {
-  top: -50px;
-  left: 50px;
+  top: -70px;
+    left: -54px;
   width: 100px;
   height: 100px;
   opacity: 1;
@@ -134,8 +154,8 @@
 
 .container-event .box:hover span:after
 {
-  bottom: -50px;
-  right: 50px;
+  bottom: -62px;
+    right: -8px;
   width: 100px;
   height: 100px;
   opacity: 1;
@@ -212,4 +232,8 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
+}
+
+.content h2{
+  display: none;
 }

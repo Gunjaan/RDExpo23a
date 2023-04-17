@@ -1792,9 +1792,8 @@ h4 {
 }
 .container.with-line-above-astro,
 .container.with-line-no-padding {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-left: 1px solid #1c2e46;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .container.with-line-above-astro {
   z-index: 10;
@@ -2399,7 +2398,8 @@ h4 {
   font-weight: 400;
 }
 .tabs-content {
-  margin-left: -230px;
+  margin-left: -200px;
+  padding-top: 3rem;
 }
 .destination-heading {
   position: relative;
@@ -2409,7 +2409,7 @@ h4 {
 .tiny-orange-call-out {
   position: absolute;
   left: 110%;
-  top: -7px;
+  top: -14px;
   width: 120px;
   font-family: Roboto, sans-serif;
   color: #ef480e;
@@ -3683,10 +3683,12 @@ h4 {
     width: 100%;
     clear: left;
     font-size: 28vw;
+    margin-top: 2rem;
   }
   .tabs-content {
     width: 100%;
     margin-left: 0;
+    padding: 1rem;
   }
   .destination-heading {
     width: 100%;

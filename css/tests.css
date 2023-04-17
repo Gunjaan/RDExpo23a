@@ -248,3 +248,46 @@
   display: flex;
   flex-direction: column;
 }
+.evtim{
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	margin-top: 1rem;
+	font-size: 18px;
+	font-family: Anton, sans-serif;
+	border: 1px solid black;
+	padding: 0.5rem 1rem;
+}
+@media screen and (max-width:425px){
+	.hack > span{
+		letter-spacing: 0;
+	}
+	.tab-pane{
+		padding: 0px;
+	}
+	.hun-about{
+		width: 100%;
+	}
+	.abt-section{
+		width: 100% !important;
+	}
+	.hackunimg{
+		position: block !important;
+	}
+	.evtim{
+		width: 100%;
+	}
+	.container.with-line-above-astro{
+		width: 100%;
+		margin: 0;
+	}
+	.main-nav__logo{
+		padding: 0;
+		margin: 0;
+		width: auto;
+	}
+	.destination__description{
+		width: 100%;
+	}
+}

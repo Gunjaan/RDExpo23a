@@ -4,3 +4,36 @@
     height: 390px;
   }
 }
+
+@media screen and (max-width:425px){
+  footer{
+    padding: 0;
+  }
+  .foot1{
+    padding-top: 2rem;
+  }
+  .foot2{
+    /* gap: 2rem; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .foot2 img{
+    margin: 3rem;
+    width: 5rem;
+  }
+  .foot2 img:nth-child(1){
+    width: 12rem;
+    margin-top: 2rem;
+  }
+  .foot2 img:nth-child(2){
+    width: 8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .destination-heading{
+    top: 0 !important;
+  }
+  .nav-bar{
+    width: 100% !important;
+  }
+}
