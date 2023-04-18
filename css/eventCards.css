@@ -237,6 +237,7 @@
 }
 .content img{
   width: 25rem;
+  padding: 0;
 }
 .evback{
   z-index: 5;

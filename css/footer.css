@@ -40,6 +40,18 @@ footer{
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-direction: column;
+    margin-top: 0.6rem;
+}
+.conus{
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footlnk{
+    color: #7e99e3;
 }
 .f3right{
     display: flex;
@@ -62,6 +74,7 @@ footer{
     justify-content: space-between;
     width: 100%;
     align-items: flex-end;
+    align-items: flex-start;
 }
 
 @media screen and (max-width:425px){
