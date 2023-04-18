@@ -84,35 +84,79 @@
     <link rel="stylesheet" href="../css/registration.css">
   </head>
   <body class="glitch">
-    <div class="navibar">
-      <img src="../images/ieee/5a7bccad69f23900017083ea_spaced-logo.png" alt="ieee">
-      <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Events</a>
-        <div class="dropdwn">
-          <a href="./codemania.html">Code Mania</a>
-          <a href="./hackathon.html">Hack UN</a>
-          <a href="./gamingnight.html">E-Sports</a>
-          <a href="./movie.html">Movie Night</a>
-          <a href="./paintball.html">Warzone Extreme</a>
-          <a href="./stylewars.html">Style Wars</a>
-          <a href="./webot.html">WebBot Jam</a>
+    <div class="navi">
+      <nav class="mb-4 navbar navbar-expand-lg navbar-dark cyan nav-bar">
+        <a class="navbar-brand font-bold" href="#"><img src="../images/ieee/5a7bccad69f23900017083ea_spaced-logo.png" alt="ieee" class="nav-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-menus" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto nav-itms">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-cyan dropbg" aria-labelledby="navbarDropdownMenuLink-4">
+                        <a class="dropdown-item" href="./stylewars.html">Style Wars</a>
+                        <a class="dropdown-item" href="./codemania.html">Code Mania</a>
+                        <a class="dropdown-item" href="./gamingnight.html">ESports</a>
+                        <a class="dropdown-item" href="./paintball.html">Warzone Extreme</a>
+                        <a class="dropdown-item" href="./webot.html">Web Bot Jam</a>
+                        <a class="dropdown-item" href="./hackathon.html">HackUN</a>
+                        <a class="dropdown-item" href="./movie.html">Movie Night</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sponsors</a>
+                    </li>
+            </ul>
         </div>
         <script>
-          // on click Home scroll to top smooth
-          document.querySelector(".navibar a").addEventListener("click", () => {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
+          document
+            .querySelector(".nav-bar .nav-menus .nav-item.active")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector("#home").scrollIntoView({
+                behavior: "smooth",
+              });
             });
-          });
+          document
+            .querySelector(".nav-bar .nav-menus .nav-item:nth-child(2)")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector("#about-rnd").scrollIntoView({
+                behavior: "smooth",
+              });
+            });
+          document
+            .querySelector(".nav-bar .nav-menus .nav-item:nth-child(3)")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector("#events").scrollIntoView({
+                behavior: "smooth",
+              });
+            });
+          document
+            .querySelector(".nav-bar .nav-menus .nav-item:nth-child(4)")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector("#schedule").scrollIntoView({
+                behavior: "smooth",
+              });
+            });
           
         </script>
-        <a href="../pages/registration.html">Registration</a>
-        <a href="../pages/schedule.html">Schedule</a>
-        <a href="../pages/sponsors.html">Sponsors</a>
-      </div>
+      </nav>
     </div>
     <div class="hackathon" id="home">
       <div class="hack-content">

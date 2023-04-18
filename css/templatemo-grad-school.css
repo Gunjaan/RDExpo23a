@@ -9,34 +9,39 @@ https://templatemo.com/tm-557-grad-school
 
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" );
-body {
+/* body {
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
 /* Basic */
 
-a {
+/* a {
 	color: #3CF;
     text-decoration: none;
-}
+} */
 
-a:hover {
+/* a:hover {
 	color: #FC3;
     text-decoration: none;
-}
+} */
 
-ul {
+/* ul {
     padding: 0px;
     margin: 0px;
     list-style: none;
-}
+} */
 
-p {
+/* p {
     font-size: 13px;
     line-height: 22px;
+} */
+
+header{
+  font-family: 'Montserrat', sans-serif;
 }
-
-
+.logo a img{
+  width: 150px;
+}
 .section-heading {
     text-align: center;
     margin-bottom: 70px;
@@ -81,7 +86,7 @@ p {
 /* Buttons */
 
 .main-button a {
-    background-color: #76b900;
+    background-color: #0068e8;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -142,7 +147,7 @@ a.menu-link { display: none; }
   }
   nav[role="navigation"] li:hover a,
   nav[role="navigation"] li.active a {
-      color: #76b900;
+      color: #0068e8;
   }
   
   @media screen and (min-width: 951px) {
@@ -183,6 +188,7 @@ a.menu-link { display: none; }
     z-index: 12;
     width: 100%;
     top: 0;
+    left: 0;
 }
 
 .main-header .logo {
@@ -199,7 +205,7 @@ a.menu-link { display: none; }
 }
 .main-header .logo a em {
     font-style: normal;
-    color: #76b900;
+    color: #0068e8;
 }
 
 .main-menu {
@@ -227,6 +233,7 @@ a.menu-link { display: none; }
     color: #fff;
     border: 2px solid transparent;
     transition: all 0.5s;
+    text-decoration: none;
 }
 
 .main-menu li.has-submenu a:after {
@@ -246,6 +253,7 @@ a.menu-link { display: none; }
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+    padding: 0;
 }
 
 .main-menu li:hover .sub-menu {
@@ -281,13 +289,13 @@ a.menu-link { display: none; }
 }
 
 .main-menu li .sub-menu li a:hover {
-    color: #76b900;
+    color: #0068e8;
     border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #76b900;
+    border: 2px solid #004f7d;
 }
 
 @media (max-width: 950px) {
@@ -360,7 +368,7 @@ a.menu-link { display: none; }
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #76b900;
+  color: #0068e8;
   font-weight: 900;
 }
 
@@ -420,7 +428,7 @@ section.features .col-4 {
 }
 
 .features-content:hover {
-    background-color: #76b900;
+    background-color: #0068e8;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
 }
 
@@ -577,15 +585,15 @@ section.why-us {
 #tabs ul .ui-tabs-active {
 }
 #tabs ul .ui-tabs-active a {
-  color: #76b900;
+  color: #0068e8;
 }
 #tabs ul .ui-tabs-active a:after {
-  background-color: #76b900;
+  background-color: #0068e8;
   width: 15px;
   height: 15px;
 }
 #tabs ul .ui-tabs-active a:before {
-  border-color: #76b900;
+  border-color: #0068e8;
 }
 #tabs h4 {
     margin-top: 60px;
@@ -654,7 +662,7 @@ section.coming-soon .continer h4 {
 }
 section.coming-soon .continer h4 em {
     font-style: normal;
-    color: #76b900;
+    color: #0068e8;
 }
 
 @media screen and (max-width: 767px) {
@@ -717,7 +725,7 @@ section.coming-soon .continer .counter .seconds .value {
 section.coming-soon .continer .counter span {
     font-size: 18px;
     text-transform: uppercase;
-    color: #76b900;
+    color: #0068e8;
     font-weight: 500;
     letter-spacing: 1px;
     margin-top: 0px;
@@ -789,7 +797,7 @@ section.coming-soon form input::placeholder { color: #fff; }
 
 section.coming-soon form button {
     margin-top: 10px;
-    background-color: #76b900;
+    background-color: #0068e8;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -843,7 +851,7 @@ section.courses .item .down-content p {
 
 section.courses .item .down-content img {
     width: 40px;
-    border: 2px solid #76b900;
+    border: 2px solid #0068e8;
     border-radius: 50%;
     text-align: left;
     display: inline-block;
@@ -925,7 +933,7 @@ section.video .left-content h4 {
 }
 section.video .left-content h4 em {
     font-style: normal;
-    color: #76b900;
+    color: #0068e8;
 }
 
 section.video .left-content .main-button {
@@ -970,7 +978,7 @@ section.video .left-content .main-button {
   margin-top: -32.5px;
   margin-left: -32.5px;
   border-radius: 50%;
-  background-color: #76b900;
+  background-color: #0068e8;
   z-index: 10;
 }
 .video-item figure a:after {
@@ -986,7 +994,7 @@ section.video .left-content .main-button {
   z-index: 10;
 }
 .video-item figure a:hover:before {
-  background-color: #76b900;
+  background-color: #0068e8;
 }
 
 .video-item .video-caption {
@@ -1525,7 +1533,7 @@ section.contact form textarea::placeholder { color: #fff; }
 section.contact form textarea::placeholder { color: #fff; }
 
 section.contact form button {
-    background-color: #76b900;
+    background-color: #0068e8;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -1557,7 +1565,7 @@ footer p {
 
 footer p a,
 footer p a:hover {
-    color: #76b900;
+    color: #0068e8;
 }
 
 @media screen and (max-width: 992px) {

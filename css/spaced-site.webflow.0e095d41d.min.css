@@ -1691,6 +1691,16 @@ h4 {
 .w-tab-content {
   display: block;
   overflow: hidden;
+  margin-top: 0 !important;
+  padding-top: 5rem;
+  width: 100vw;
+}
+.whiteleftabt{
+  position: absolute;
+  width: 10rem;
+  height: 20rem;
+  background-color: #fff;
+  left: 0;
 }
 .w-tab-pane {
   display: none;
@@ -1950,6 +1960,7 @@ h4 {
   z-index: 3;
   width: 100%;
   clear: left;
+  margin-top: 3rem;
 }
 .orange-divider {
   position: relative;
@@ -2012,7 +2023,7 @@ h4 {
 }
 .astronaut {
   position: absolute;
-  top: 10%;
+  top: 4%;
   right: 0;
   width: 80%;
   margin-top: -85%;
@@ -2282,6 +2293,7 @@ h4 {
 }
 .explore-text-link {
   position: absolute;
+  font-size: 1.3rem;
   left: 35px;
   top: 10px;
   bottom: 0;
@@ -2396,6 +2408,10 @@ h4 {
   font-size: 320px;
   line-height: 0.3em;
   font-weight: 400;
+  top: -2rem;
+}
+.abtimg1{
+  padding: 0 !important;
 }
 .tabs-content {
   margin-left: -200px;
@@ -2439,15 +2455,15 @@ h4 {
   margin-top: 20px;
 }
 .margined-image {
-  margin-top: 20px;
+  margin-top: 36px;
 }
 .activities {
   position: relative;
 }
 .left-side-white-trail {
   position: absolute;
-  left: -10rem;
-    top: 11.4rem;
+  left: -13rem;
+  top: 0;
   z-index: -2;
   width: 60%;
   height: 70%;
@@ -2624,7 +2640,7 @@ h4 {
   z-index: 20;
 }
 .heading-2 {
-  margin-top: 20px;
+  margin-top: -58px;
 }
 .ship-section {
   position: relative;
