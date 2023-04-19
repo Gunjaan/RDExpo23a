@@ -155,4 +155,8 @@
   .warz span{
     font-size: 0.7rem !important;
   }
+  #L::after {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }

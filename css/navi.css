@@ -10,6 +10,7 @@ header{
     background-color: #333;
     position: fixed;
     z-index: 50;
+    top: 0;
 }
 .topnd{
     display: flex;
