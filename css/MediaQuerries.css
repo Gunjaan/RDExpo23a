@@ -149,4 +149,10 @@
     justify-content: flex-end !important;
     margin-right: 5rem !important;
   }
+  .hack span{
+    font-size: 1.3rem !important;
+  }
+  .warz span{
+    font-size: 0.7rem !important;
+  }
 }
