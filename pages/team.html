@@ -13,6 +13,13 @@
     />
     <link rel="stylesheet" href="../css/navi.css" />
     <link rel="stylesheet" href="../css/team.css">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/MediaQuerries.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
@@ -71,7 +78,7 @@
           </div>
         </div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      </header>
+    </header>
       <script>
         function openNav() {
           document.getElementById("myNav").style.height = "100%";
@@ -90,35 +97,286 @@
         //   }
         // }
       </script>
-      <div class="teamm">
+    <div class="teamm">
           <h1>Our Team</h1>
-          <h2>Faculty Coordinators</h2>
+          <h2>FACULTY COORDINATORS</h2>
             <div class="image-area">
                 <div class="img-wrapper">
-                    <img src="data:image/jpeg;base64,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" alt="Atul Prajapati">
+                    <img src="../images/team/download.jpg">
                     <h2>Shruti Jain</h2>
                     <ul>
-                        <li><a href="https://github.com/atuljustano"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
                 <div class="img-wrapper">
-                    <img src="data:image/jpeg;base64,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" alt="Atul Prajapati">
-                    <h2>Shruti Jain</h2>
+                    <img src="../images/team/Sunill.dc4cf0d383619192533c.jpeg">
+                    <h2>Sunil Kumar Khah</h2>
                     <ul>
-                        <li><a href="https://github.com/atuljustano"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
                 <div class="img-wrapper">
-                    <img src="https://www.ieeerndexpo.com/static/media/Sunill.dc4cf0d383619192533c.jpeg" alt="Atul Prajapati">
-                    <h2>Shruti Jain</h2>
+                    <img src="../images/team/download (1).jpg">
+                    <h2>Yugal Kumar</h2>
                     <ul>
-                        <li><a href="https://github.com/atuljustano"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
-      </div>
+            <h2>IEEE COUNCIL</h2>
+            <div class="image-area">
+                <div class="img-wrapper">
+                    <img src="../images/team/IMG_20220911_165616~2 - VIPUL ARORA 201151.jpg">
+                    <h2>Vipul Arora</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/ar0ravipul"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://instagram.com/ar0ravipul?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="../images/team/arpit.jpg">
+                    <h2>Arpit Kaushal</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/arpit-kaushal-133a911bb"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://instagram.com/general.broda"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/samagra_dwivedi.jpg">
+                    <h2>Samagra Dwivedi</h2>
+                    <ul>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/samagura.senpai/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/arnav_seth.jpg">
+                    <h2>Arnav Seth</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/annu-chauhan-989865204"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/arnavsethh/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/gurleen_kaur.jpg">
+                    <h2>Gurleen Kaur</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/gurleen-kaur-6904b61ba"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/neeti153"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/vansh_gulati.webp">
+                    <h2>Vansh Gulati</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/vanshgulati16/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/unsanskari_bachha/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/krishna_modi.jpeg">
+                    <h2>Krishna Modi</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/krishnamodi1207/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/krishna_modi_12/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/gunjan_verma.jpg">
+                    <h2>Gunjan Verma</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/gunjan-v-8671211ba/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/gunjanxv/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/shubhang_shukla.jpg">
+                    <h2>Shubhnag Shukla</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/shubhang-shukla-8426691b6"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/Shubhang%20Shukla/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>WIE IEEE JUIT SB COUNCIL</h2>
+            <div class="image-area">
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/vishruti_sharma.jpg">
+                    <h2>Vishruti Sharma</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/vishrutisharma22"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://instagram.com/vishruti_sharma_?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/gunjan_verma.jpg">
+                    <h2>Gunjan Verma</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/gunjan-v-8671211ba/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/gunjanxv/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/annu_chauhan.jpeg">
+                    <h2>Annu Chauhan</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/annu-chauhan-989865204s"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/annusadhna144/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/isha_rawat.jpg">
+                    <h2>Isha Rawat</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/isha-rawat-5b3b361b8"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/isha__rwtt/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>IEEE SIGHT JUIT SB COUNCIL</h2>
+            <div class="image-area">
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/angel_singh.jpg">
+                    <h2>Angel Singh</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/angel-singh"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/1aangie/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/geetali_goel.jpg">
+                    <h2>Geetali Goel</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/geetali-goel-439b46207"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/geetali_goel/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/annu_chauhan.jpeg">
+                    <h2>Annu Chauhan</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/annu-chauhan-989865204s"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/annusadhna144/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://ieeejuit.co.in/images/council2022/vivek_kumar_kataria.jpeg">
+                    <h2>Vivek Kumar Kataria</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/vivek-kumar-kataria-3b69451a9/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/vivek_kataria_18/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>ORGANISING TEAM</h2>
+            <div class="image-area">
+                <div class="img-wrapper">
+                    <img src="../images/team/mk.jpg">
+                    <h2>Mayank Kumar</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/mayank-kumar-375600214"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/racinmk/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="../images/team/WhatsApp Image 2023-04-19 at 5.21.21 PM - ARYAM 211392.jpeg">
+                    <h2>Aryam Sharma</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/aryam-4aa559223/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/_aryamsharma_"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="../images/team/IMG_20230418_223403 - KSHITIZ TAYAL 211173.jpg">
+                    <h2>Kshitiz Tayal</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/kshitiz-tayal-a06b90224"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="www.instagram.com/tayalkshitiz3"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="../images/team/aavish.jpeg">
+                    <h2>Aavishkar</h2>
+                    <ul>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="www.instagram.com/Aavishkar__01"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="../images/team/ishita.jpg">
+                    <h2>Ishita Mishra</h2>
+                      <ul>
+                          <li><a href="https://www.linkedin.com/in/ishita-mishra-6744b2233"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href="www.instagram.com/_Ishu_1129_"><i class="fab fa-instagram"></i></a></li>
+                      </ul>
+                </div>
+                <div class="img-wrapper">
+                    <img src="">
+                    <h2></h2>
+                      <ul>
+                          <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+
+    <footer style="margin-top: 5rem;">
+                <div class="foot1">
+                  Quest For Excellence
+                  <span>IEEE R&D Expo</span>
+                </div>
+                <div class="foot2">
+                  <img
+                    src="../images/ieee/5a7cf5cdd046c4000193c673_girl.png"
+                    alt=""
+                    class="footlogo"
+                  />
+                  <img
+                    src="../images/ieee/5a7bccad69f23900017083ea_spaced-logo.png"
+                    alt=""
+                    class="footlogo"
+                  />
+                  <img src="../images/ieee/IEEE Sight Logo.png" alt="" class="footlogo" />
+                  <img src="../images/ieee/wiewhite.png" alt="" class="footlogo" />
+                </div>
+                <span class="footline"></span>
+                <div class="foot3">
+                  <div class="f3left">
+                    <div>
+                      <img src="../images/ieee_logo_icon_169992.webp" alt="ieee"> IEEE JUIT SB 2022 - 2023
+                    </div>
+                    <div class="conus">
+                      <span>
+                        Jaypee University Of Information Technology
+                      </span>
+                      <span>
+                        Waknaghat, HP - 173234, India
+                      </span>
+                      <span>
+                        Phone: <a class="footlnk" href="tel:+91-7082787975"> +91-7082787975</a> 
+                      </span>
+                      <span>
+                        Email: <a class="footlnk" href="mailto:ieee.juit@juitsolan.in"> ieee.juit@juitsolan.in</a>
+                      </span>
+                    </div>
+          
+                  </div>
+                  <div class="f3right">
+                    <a href="mailto:ieee.juit@juitsolan.in" class="footsocials"><img src="../fonts/socials/mail.svg" alt=""></a>
+                    <a href="https://www.facebook.com/ieeejuitsb/" class="footsocials"
+                      ><img src="../fonts/socials/face.svg" alt=""></i
+                    ></a>
+                    <a href="https://www.instagram.com/ieeejuit/?hl=en" class="footsocials"
+                      ><img src="../fonts/socials/insta.svg" alt=""></i
+                    ></a>
+                    <a href="https://in.linkedin.com/company/ieeejuit" class="footsocials"><img src="../fonts/socials/link.svg" alt=""></a>
+                    <a href="https://twitter.com/juitieee" class="footsocials"><img src="../fonts/socials/twi.svg" alt=""></a>
+                  </div>
+                </div>
+            </footer>
 </body>
 </html>
