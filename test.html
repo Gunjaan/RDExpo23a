@@ -1,74 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="icon"
-      href="https://cdn.discordapp.com/app-icons/907335829884661820/46bb13e578378573d7677b1aabcd0325.webp?size=160"
-    />
-
-    <title>YTBD</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="/css/flex-slider.css" />
-    <link rel="stylesheet" href="/css/lightbox.css" />
-    <link rel="stylesheet" href="/css/owl.css" />
-    <link rel="stylesheet" href="/css/fontawesome.css" />
-    <link rel="stylesheet" href="/css/templatemo-grad-school.css" />
-    <link rel="stylesheet" href="./css/eventCards.css">
+    <link rel="stylesheet" href="./css/navi.css" />
   </head>
-
-  <!-- body start -->
   <body>
-    <!--header-->
-    <header class="main-header clearfix" role="header">
-      <div class="logo">
-        <a href="#"><em>Yet To Be Decided</em></a>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html"><img src="./images/ieee/5a7bccad69f23900017083ea_spaced-logo.png" alt=""></a>
+        <div class="topnd">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Events
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#contact">Schedule</a>
+          <a href="#about">Team</a>
+          <a href="#about">Sponsors</a>
+          <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a> -->
+        </div>
       </div>
-      <!-- <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a> -->
-      <div class="phmen">
-        <a href="">=</a>
+      <div id="myNav" class="overlay-n">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Events
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#contact">Schedule</a>
+          <a href="#about">Team</a>
+          <a href="#about">Sponsors</a>
+        </div>
       </div>
-      <nav id="menu" class="main-nav" role="navigation">
-        <ul class="main-menu">
-          <li><a href="#section1">Home</a></li>
-
-          <li><a href="#section4">Editorials</a></li>
-          <!-- <li><a href="#section5">Video</a></li> -->
-          <li><a href="#section5">Recommendation</a></li>
-          <li class="has-submenu">
-            <a href="#">About Us</a>
-            <ul class="sub-menu">
-              <li><a href="#section2">Team</a></li>
-              <li><a href="#section3">Contacts</a></li>
-              <li><a href="#section3">Socials</a></li>
-              <li>
-                <a
-                  href="https://templatemo.com/about"
-                  rel="sponsored"
-                  class="external"
-                  >External URL</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </header>
     <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+      // function myFunction() {
+      //   var x = document.getElementById("myTopnav");
+      //   if (x.className === "topnav") {
+      //     x.className += " responsive";
+      //   } else {
+      //     x.className = "topnav";
+      //   }
+      // }
     </script>
   </body>
 </html>

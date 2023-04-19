@@ -66,6 +66,10 @@
         overflow-x: hidden !important;
       }
     </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
     <link rel="stylesheet" href="./css/MediaQuerries.css" />
     <link rel="stylesheet" href="./css/eventCards.css" />
     <link rel="stylesheet" href="./css/stylewars.css" />
@@ -77,6 +81,7 @@
     <link rel="stylesheet" href="./css/eventCards.css" />
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/schedule.css">
+    <link rel="stylesheet" href="./css/navi.css">
   </head>
   <body>
     <div
@@ -186,48 +191,87 @@
         sizes="(max-width: 767px) 50vw, 100vw"
       />
     </div>
+    <!-- Header -->
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html"><img src="./images/ieee/5a7bccad69f23900017083ea_spaced-logo.png" alt=""></a>
+        <div class="topnd">
+          <a href="#" class="active">Home</a>
+          <a href="#explore">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Events
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./pages/stylewars.html" target="_blank">Style Wars</a>
+              <a href="./pages/codemania.html" target="_blank">Code Mania</a>
+              <a href="./pages/gamingnight.html" target="_blank">E-Sports</a>
+              <a href="./pages/paintball.html" target="_blank">Warzone Xtreme</a>
+              <a href="./pages/webot.html" target="_blank">Web Bot Jam</a>
+              <a href="./pages/hackathon.html" target="_blank">Hack UN</a>
+              <a href="./pages/movie.html" target="_blank">Movie Night</a>
+            </div>
+          </div>
+          <a href="#schedl">Schedule</a>
+          <a href="">Team</a>
+          <a href="#sponsors">Sponsors</a>
+          <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a> -->
+        </div>
+      </div>
+      <div id="myNav" class="overlay-n">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#" class="active">Home</a>
+          <a href="#explore">About</a>
+          <div class="dropdown">
+            <button class="dropbtn">Events
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./pages/stylewars.html" target="_blank">Style Wars</a>
+              <a href="./pages/codemania.html" target="_blank">Code Mania</a>
+              <a href="./pages/gamingnight.html" target="_blank">E-Sports</a>
+              <a href="./pages/paintball.html" target="_blank">Warzone Xtreme</a>
+              <a href="./pages/webot.html" target="_blank">Web Bot Jam</a>
+              <a href="./pages/hackathon.html" target="_blank">Hack UN</a>
+              <a href="./pages/movie.html" target="_blank">Movie Night</a>
+            </div>
+          </div>
+          <a href="#schedl">Schedule</a>
+          <a href="">Team</a>
+          <a href="#sponsors">Sponsors</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </header>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+      // function myFunction() {
+      //   var x = document.getElementById("myTopnav");
+      //   if (x.className === "topnav") {
+      //     x.className += " responsive";
+      //   } else {
+      //     x.className = "topnav";
+      //   }
+      // }
+    </script>
+    <!-- Header Ends -->
     <div
       data-w-id="993a679c-5a3a-c5c3-b34d-61ad76fb41ff"
       style="opacity: 0"
       class="container with-line-above-astro w-container"
     >
-      <!-- Header -->
-      <header class="main-header clearfix" role="header">
-        <div class="logo">
-          <a href="/"
-            ><img
-              src="./images/ieee/5a7bccad69f23900017083ea_spaced-logo.png"
-              alt=""
-          /></a>
-        </div>
-        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-        <nav id="menu" class="main-nav" role="navigation">
-          <ul class="main-menu">
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section4">About</a></li>
-            <li class="has-submenu">
-              <a href="#">Events</a>
-              <ul class="sub-menu">
-                <li><a href="#section2">Team</a></li>
-                <li><a href="#section3">Contacts</a></li>
-                <li><a href="#section3">Socials</a></li>
-                <li>
-                  <a
-                    href="https://templatemo.com/about"
-                    rel="sponsored"
-                    class="external"
-                    >External URL</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a href="#section5">Schedule</a></li>
-            <li><a href="#section5">Team</a></li>
-            <li><a href="#section5">Sponsors</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!-- Header Ends -->
       <main
         data-w-id="25f51c47-faec-e0a2-14dd-197bc8b59d1b"
         style="opacity: 0"
@@ -690,20 +734,20 @@
         <div style="margin-bottom: 2rem;" class="orange-divider-cenetred">
           <div class="third-top"></div>
         </div>
-        <section class="timeline">
+        <section class="timeline" id="schedl">
           <h4 class="schedule">Schedule</h4>
           <ul>
             <li>
               <div>
                 <time>21<sup>st</sup> April</time>
-                <div class="discovery">
+                <div class="discovery dayss" style="width: 170px !important; padding: 0;">
                   <h1>Day 1</h1>
                   <p>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/clock--v3.png"/> 04:00 PM
                   </p>
                 </div>
                 <div class="scientist">
-                  <h1>Innaugration</h1>
+                  <h1 class="wxtr">Innaugration</h1>
                   <span><img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : LT2</span>
                 </div>
               </div>
@@ -717,8 +761,8 @@
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/clock--v3.png"/> 06:00 PM
                   </p>
                 </div>
-                <div class="scientist lohed">
-                  <h1>Hack UN Starts</h1>
+                <div class="scientist lohed medlowhed">
+                  <h1 style="font-size: 1.6rem !important;">Hack UN Starts</h1>
                   <span><img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : LT1</span>
                 </div>
               </div>
@@ -733,7 +777,7 @@
                   </p>
                 </div>
                 <div class="scientist loheadl">
-                  <h1 style="font-size: 1.3rem;">Warzone Xtreme Starts</h1>
+                  <h1 class="wxtra">Warzone Xtreme Starts</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : FBG
                   </span>
@@ -749,8 +793,8 @@
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/clock--v3.png"/> 12:00 PM
                   </p>
                 </div>
-                <div class="scientist lohed">
-                  <h1>Hack UN Ends</h1>
+                <div class="scientist">
+                  <h1 class="wxtr">Hack UN Ends</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : LT1
                   </span>
@@ -767,7 +811,7 @@
                   </p>
                 </div>
                 <div class="scientist">
-                  <h1>Style Wars</h1>
+                  <h1 class="wxtrl">Style Wars</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : CR7
                   </span>
@@ -783,8 +827,8 @@
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/clock--v3.png"/> 05:00 PM
                   </p>
                 </div>
-                <div class="scientist lohed">
-                  <h1>Gaming Night</h1>
+                <div class="scientist">
+                  <h1 class="wxtr">Gaming Night</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : Ven
                   </span>
@@ -801,7 +845,7 @@
                   </p>
                 </div>
                 <div class="scientist">
-                  <h1>WebBot Jam</h1>
+                  <h1 style="font-size: 1.8rem !important;">WebBot Jam</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : LT1, LT2
                   </span>
@@ -818,7 +862,7 @@
                   </p>
                 </div>
                 <div class="scientist">
-                  <h1>Code Mania</h1>
+                  <h1 class="wxtrl">Code Mania</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : Ven
                   </span>
@@ -835,7 +879,7 @@
                   </p>
                 </div>
                 <div class="scientist">
-                  <h1 style="font-size: 1.3rem;">Warzone Xtreme Ends</h1>
+                  <h1 class="wxtra">Warzone Xtreme Ends</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : FBG
                   </span>
@@ -852,7 +896,7 @@
                   </p>
                 </div>
                 <div class="scientist">
-                  <h1>Movie Night</h1>
+                  <h1 class="wxtr">Movie Night</h1>
                   <span>
                     <img class="sclock" src="https://img.icons8.com/ios/50/null/marker--v1.png"/> : LT1, LT2
                   </span>
@@ -901,7 +945,7 @@
               <img src="./images/spons/1280px-.xyz_logo.svg.png" alt="">
             </div>
             <div class="sponcard">
-              <img src="./images/spons/5a7bc9c069f2390001708112_usa.png" alt="">
+              <img style="margin: 2rem 0;" src="./images/spons/5a7bc9c069f2390001708112_usa.png" alt="">
             </div>
             <div class="sponcard">
               <img src="./images/spons/Axure.png" alt="">
