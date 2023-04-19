@@ -35,14 +35,14 @@
     width: 400px;
     padding: 14px;
     background: #fff;
-    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    box-shadow: 4px 13px 30px 1px rgba(56, 147, 252, 0.2);
     border-radius: 5px;
     display: flex;
     align-items: center;
 }
 .timeline ul li div time {
     position: absolute;
-    background: #f5af19;
+    background: #1999f5;
     width: 80px;
     height: 30px;
     top: -15px;
@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     letter-spacing: 2px;
 }
 .timeline ul li div div {
