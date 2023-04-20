@@ -44,3 +44,19 @@
 }
 
 
+.sponcards{
+    gap: 3rem;
+}
+
+@media screen and (max-width: 600px){
+    .sponcards{
+        gap: 2rem;
+    }
+    .sponros{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .sponter{
+        margin-top: 2rem;
+    }
+}
